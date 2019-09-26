@@ -15,38 +15,31 @@ class Owners extends Component {
 
     render() {
         return (
-            <>
+          <>
             {JSON.stringify(this.props.owners)}
             <h1>Owners component</h1>
             <div>
-                <h2>Add Owner</h2>
-                <input/>
-                <button>Submit</button>
+              <h2>Add Owner</h2>
+              <input placeholder="Add Owner" />
+              <button>Submit</button>
             </div>
             <div>
-                <h2>Owners</h2>
-                <table>
-                    <thead>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Number of pets
-                        </th>
-                        <th>
-                            Action
-                        </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                          <td>{this.props.owners}</td>
-                      </tr>
-
-                    </tbody>
-                </table>
+              <h2>Owners</h2>
+              <table>
+                <thead>
+                  <th>Name</th>
+                  <th>Number of pets</th>
+                  <th>Action</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{this.props.owners}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            </>
-        )
+          </>
+        );
     }
 }
 

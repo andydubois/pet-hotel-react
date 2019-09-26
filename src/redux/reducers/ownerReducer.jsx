@@ -7,4 +7,4 @@ const ownerReducer = (state =[], action) => {
     }
 }
 
-export default ownerReducer
+export default ownerReducer;
