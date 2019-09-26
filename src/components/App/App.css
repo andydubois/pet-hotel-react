@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -10,7 +12,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +32,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-link {
+  float: left;
+  color: #f2f2f2;
+  /* background-color: #0276aa; */
+  text-align: center;
+  padding: 24px 10px;
+  text-decoration: none;
+  font-size: 15px;
+
+  /* these last two make the logout button in
+  the nav bar look like another link */
+  /* border:none;
+  cursor: pointer;
+  outline:0; */
 }

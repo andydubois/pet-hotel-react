@@ -16,7 +16,7 @@ class Pets extends Component {
     render() {
         return (
             <>
-            {JSON.stringify{this.props.pets}}
+            {JSON.stringify(this.props.pets)}
             <h1>Pets component</h1>
             <div>
                 <h2>Add Pet</h2>
