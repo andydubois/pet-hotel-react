@@ -1,12 +1,12 @@
 import {combineReducers} from 'redux';
 
 import petReducer from './petReducer';
-import owners from './ownerReducer';
+import ownersReducer from './ownerReducer';
 
 //default root reducer, this will take all reducers and export all of them
 const rootReducer = combineReducers({
     petReducer,
-    owners,
+    ownersReducer,
 });
 
 export default rootReducer;

@@ -1,5 +1,3 @@
-import { combineReducers } from 'redux';
-
 const ownerReducer = (state =[], action) => {
     switch(action.type) {
         case 'SET_OWNERS' :
@@ -9,6 +7,4 @@ const ownerReducer = (state =[], action) => {
     }
 }
 
-export default combineReducers({
-    ownerReducer,
-});
+export default ownerReducer

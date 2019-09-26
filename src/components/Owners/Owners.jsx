@@ -16,6 +16,7 @@ class Owners extends Component {
     render() {
         return (
             <>
+            {JSON.stringify(this.props.owners)}
             <h1>Owners component</h1>
             <div>
                 <h2>Add Owner</h2>
@@ -37,6 +38,9 @@ class Owners extends Component {
                         </th>
                     </thead>
                     <tbody>
+                      <tr>
+                          <td>{this.props.owners}</td>
+                      </tr>
 
                     </tbody>
                 </table>
@@ -46,4 +50,10 @@ class Owners extends Component {
     }
 }
 
-export default connect()(Owners);
+const mapStateToProps = state => {
+    return {
+        owners: state.ownersReducer
+    }
+}
+
+export default connect(mapStateToProps)(Owners);
