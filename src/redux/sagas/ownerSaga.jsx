@@ -1,0 +1,23 @@
+import axios from 'axios';
+import { put, takeLatest } from 'redux-saga/effects';
+
+function* getOwners(action) {
+    try {
+        yield console.log('in getOwners Saga');
+        let response = yield axios.get('/getOwners.php');
+        yield put({
+            type: 'SET_OWNERS',
+            payload: response.data
+        })
+    } catch(err) {
+        console.log('error in getOwners GET', err);
+        
+    }
+}
+
+
+function* ownerSaga() {
+    yield takeLatest('GET_OWNERS', getOwners);
+}
+
+export default ownerSaga;
