@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+
 class Owners extends Component {
     componentDidMount() {
         this.getOwners();
@@ -16,7 +17,6 @@ class Owners extends Component {
     render() {
         return (
             <>
-            {JSON.stringify(this.props.owners)}
             <h1>Owners component</h1>
             <div>
                 <h2>Add Owner</h2>
@@ -38,9 +38,8 @@ class Owners extends Component {
                         </th>
                     </thead>
                     <tbody>
-                      <tr>
-                          <td>{this.props.owners}</td>
-                      </tr>
+                      
+                      {this.props.owners}
 
                     </tbody>
                 </table>
